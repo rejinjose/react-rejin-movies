@@ -1,0 +1,57 @@
+@import '../../variables';
+
+.header {
+  background-color: $primary-color;
+  padding: 40px 0;
+  h1 {
+    font-size: 4rem;
+    line-height: 4.7rem;
+    font-weight: 700;
+    color: $white;
+  }
+}
+
+.header__navigation {
+  text-align: right;
+  ul {  
+    display: inline-block;
+    li {
+      list-style: none;
+      padding: 0 10px;
+      display: inline-block;
+
+      a {
+        display: inline-block;
+        padding: 10px;
+        color: $white;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+        letter-spacing: 2px;
+
+        &:hover {
+          text-decoration: none;
+          font-weight: 500;
+        }
+
+        &.active {
+          font-weight: 700;
+        }
+      }
+    }
+  }  
+  .login-btn,.logout-btn {
+    border: 2px solid $white;
+    padding: 4px 25px;
+    color: $white;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    transform: translateY(-3px);
+    
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
+

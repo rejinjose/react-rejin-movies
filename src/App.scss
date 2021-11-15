@@ -1,0 +1,366 @@
+@import './bootstrap/bootstrap.min.css';
+@import 'variables';
+
+html {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.page-section {
+  padding-top: 0px;
+}
+
+ul, li, a, p, div,h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-weight-100 {
+  font-weight: 100;
+}
+
+.font-weight-200 {
+  font-weight: 200;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+
+// COLORS AND BACKGROUND COLORS
+
+.white {
+  color: $white
+}
+
+.black {
+  color: $black;
+}
+
+.white-bg {
+  background: $white;
+}
+
+.black-bg {
+  background: $black;
+}
+
+.white-hover:hover {
+  color: $white;
+}
+
+.black-hover:hover {
+  color: $black;
+}
+
+.white-bg-hover:hover {
+  background: $white;
+}
+
+.black-bg-hover:hover {
+  background: $black;
+}
+
+
+
+// PADDING AND MARGIN
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  padding: 0;
+}
+
+.padding-top-full {
+  padding-top: 100px;
+}
+
+.padding-top-half {
+  padding-top: 50px;
+}
+
+.padding-top-quarter {
+  padding-top: 25px;
+}
+
+.padding-top-20 {
+  padding-top: 20px
+}
+
+.padding-top-10 {
+  padding-top: 10px
+}
+
+.padding-bottom-full {
+  padding-bottom: 100px;
+}
+
+.padding-bottom-half {
+  padding-bottom: 50px;
+}
+
+.padding-bottom-quarter {
+  padding-bottom: 25px;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 20px
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+
+.margin-top-full {
+  margin-top: 100px;
+}
+
+.margin-top-half {
+  margin-top: 50px;
+}
+
+.margin-top-quarter {
+  margin-top: 25px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-bottom-full {
+  margin-bottom: 100px;
+}
+
+.margin-bottom-half {
+  margin-bottom: 50px;
+}
+
+.margin-bottom-quarter {
+  margin-bottom: 25px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+
+// BUTTON STYLES
+
+.btn-style-one {
+  font-size: 2rem;
+  line-height: 2.7rem;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 1px solid $white;
+  background: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+
+.title-text {
+  font-size: 3.4rem;
+  line-height: 4.1rem;
+  letter-spacing: 0.2rem;
+  span {
+    display: inline-block;
+    background-color: $primary-color;
+    color: $white;
+    padding: 5px 15px;
+    letter-spacing: 2px;
+  }
+  .slash {
+    transform: translateY(-4px);
+  }
+}
+
+.subtitle-text{
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  span{
+    display: inline-block;
+    background-color: $primary-color;
+    color: $white;
+    padding: 15px 25px;
+  }
+}
+
+.form-wrapper {
+  padding: 65px;
+  background: $primary-color;
+  .submit-btn {
+    display: inline-block;
+    position: relative;
+    &.btn-loading {
+      background: $white;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        top: 50%;
+        left: 50%;
+        background-image: url("/images/preloader/walk.gif");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translate(-50%, -50%);
+      }
+      .input[type="submit"] {
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+input {
+	font-size: 1.6rem;
+	line-height: 2.3rem;
+  color: $white;
+	text-align: left;
+	margin-bottom: 25px;
+	display: block;
+	width: 100%;
+	background: transparent;
+	border: 2px solid $grey;
+	outline: none;
+  padding: 5px;
+  &::placeholder {
+    color: $white;
+    opacity: 1; 
+  }
+  &[type="submit"] {
+    width: auto;
+    padding: 5px 28px;
+    margin-bottom: 0;
+  }
+}
+
+.loginSignupWrapper {
+  margin-bottom: 40px;
+}
+
+.default-listing-slider-wrap .default-listing-slider {
+  .itemImage {
+    img {
+      width: 100%;
+    }
+  }
+  .itemDetails {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2,a {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 23px;
+      font-weight: 400;
+      color: $white;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.view-all-movies-btn {
+  font-size: 2rem;
+  line-height: 2.7rem;
+  margin-bottom: 15px;
+  display: inline-block;
+  padding-right: 15px;
+  color: $primary-color;
+  border-bottom: 2px solid $primary-color;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.footer-block {
+  background: $primary-color;
+  p {
+    color: $white;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    font-weight: 400;
+    padding: 25px;
+    letter-spacing: 2px;
+  }
+}
+
+.suspensePreloader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,12 @@
+@import '../../variables';
+
+.successMsg {
+  background: $success_green;
+  p {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    color: $white;
+    padding: 20px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../variables';
+
+.cast-slider-wrap .casting-slider .splide__slide{
+  background: $white;
+  .characterEach {
+    position: relative;
+    .characterImage {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .characterDetails {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 10px;
+      background: $primary-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 23px;
+        font-weight: 400;
+        color: $white;
+
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,12 @@
+@import '../../variables';
+
+.errorMsg {
+  background: $error_red;
+  p {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    color: $white;
+    padding: 20px;
+    font-weight: 700;
+  }
+}

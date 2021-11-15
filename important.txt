@@ -1,0 +1,11 @@
+WEBSITE DOC:
+https://www.themoviedb.org/
+
+To get images:
+https://developers.themoviedb.org/3/getting-started/images
+
+API DOC:
+https://developers.themoviedb.org/3/getting-started/introduction
+
+API:
+https://www.themoviedb.org/settings/api

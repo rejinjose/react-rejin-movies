@@ -1,0 +1,31 @@
+@import '../../variables';
+
+.form-wrapper {
+  &__usernameInput, &__passwordInput {
+    position: relative;
+    .error {
+      position: absolute;
+      bottom: -14px;
+      color: $white;
+    }
+  }
+}
+
+.submitDisable {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.signuptext {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+  margin-top: 15px;
+  color: $white;
+  span {
+    font-weight: 700;
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

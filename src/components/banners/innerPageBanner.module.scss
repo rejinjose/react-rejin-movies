@@ -1,0 +1,67 @@
+@import '../../variables';
+
+.bannerWrapper {
+  width: 100%;
+  min-height: 30vh;
+  background: $black;
+  position: relative;
+  &-imgcontainer {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: rgba(0,0,0,0.85)
+    }
+    img {
+      width: 100%;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  &-contentcontainer {
+    position: relative;
+    z-index: 10;
+    .portrait-image-wrap {
+      width: 40vh;
+      height: 60vh;
+      margin: 0 auto;
+      background-color: $black;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.genreList {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    border: 2px solid $white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.cast-slider-wrap .casting-slider{
+  background: red;
+}
