@@ -96,7 +96,8 @@ const BannerSlider = (props) => {
               <SplideSlide key={each.id}>
                 <div className={classes['banner-slide-wrapper']}>
                   <div className={classes['background-img-wrapper']}>
-                    <img src={`${IMAGE_URL}w1920_and_h800_multi_faces${each.backdrop_path}`} alt={`${each.title}`} />
+                    {/* <img src={`${IMAGE_URL}w1920_and_h800_multi_faces${each.backdrop_path}`} alt={`${each.title}`} /> */}
+                    <img src={`${IMAGE_URL}w1280${each.backdrop_path}`} alt={`${each.title}`} />
                   </div>
                   <div className={classes['content-wrapper']}>
                     <div className={classes['content-wrapper-main']}>

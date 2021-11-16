@@ -55,7 +55,9 @@ useEffect(()=>{
     <>
     <div className={`padding-top-full padding-bottom-full ${classes['bannerWrapper'] }`}>
       <div className={classes['bannerWrapper-imgcontainer']}>
-        <img src={`${IMAGE_URL}w1920_and_h800_multi_faces${props.data.bgImg}`} alt={props.data.title} />
+        {/* <img src={`${IMAGE_URL}w1920_and_h800_multi_faces${props.data.bgImg}`} alt=
+        {props.data.title} /> */}
+        <img src={`${IMAGE_URL}w1280${props.data.bgImg}`} alt={props.data.title} />
       </div>
       <div className={classes['bannerWrapper-contentcontainer']}>
         <div className="container">
